@@ -1,0 +1,17 @@
+module secound_max;
+int arr[]={45,34,67,89,78};
+int max;
+int sec;
+max=arr[1];
+initial begin
+foreach(arr[i])begin
+if(arr[i]>max)
+max=arr[i];
+end
+sec=arr[0];
+foreach(arr[i])begin
+if(arr[i]>sec&&arr[i]<max)
+sec=arr[i];
+end
+end
+endmodule
