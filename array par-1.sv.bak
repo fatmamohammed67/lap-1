@@ -1,0 +1,17 @@
+module array_partioin;
+int arr[8]={9,7,4,6,2,8,6,5};
+int arr_even[$];
+int arr_odd[$];
+initial begin
+foreach(arr[i])begin
+if(arr[i]%2==0)begin
+arr_even.push_back(arr[i]);
+end
+else begin
+arr_odd.push_back(arr[i]);
+end
+end
+$display("arr_even=%p",even);
+$display("arr_odd=%p",odd);
+end
+endmodule
